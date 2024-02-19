@@ -30,6 +30,7 @@ import { codeBlocksRoutes } from "./api/codeBlocks/codeBlocks.routes.js";
 
 //routes
 app.use("/api/codeBlocks", codeBlocksRoutes);
+// app.use("/api/auth", authRoutes); if will have time to implement
 
 app.get("/**", (req, res) => {
   res.sendFile(path.resolve("public/index.html"));
