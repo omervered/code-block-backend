@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === "production") {
   // Cors Config
   const corsOptions = {
     // Making sure origin contains the url your frontend is running on
-    origin: ["http://127.0.0.1:3000", "http://localhost:3000", "http://localhost:5173", "http://127.0.0.1:5173"],
+    origin: ["http://127.0.0.1:3000", "http://localhost:3000", "http://localhost:5174", "http://127.0.0.1:5174"],
     credentials: true,
   };
   app.use(cors(corsOptions));
@@ -31,7 +31,8 @@ if (process.env.NODE_ENV === "production") {
 import { codeBlocksRoutes } from "./api/codeBlocks/codeBlocks.routes.js";
 
 //routes
-app.use("/api/codeBlocks", codeBlocksRoutes);
+app.use("/api/code-blocks", codeBlocksRoutes);
+
 // app.use("/api/auth", authRoutes); if will have time to implement
 
 // Make every unmatched server-side-route fall back to index.html
