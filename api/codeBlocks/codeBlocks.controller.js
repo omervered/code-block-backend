@@ -1,4 +1,4 @@
-import { codeBlockService } from "./codeBlocks.service";
+import { codeBlockService } from "./codeBlocks.service.js";
 
 export async function getCodeBlockById(req, res) {
   try {
