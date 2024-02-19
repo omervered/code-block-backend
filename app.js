@@ -3,6 +3,7 @@ import path, { dirname } from "path";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
+import { fileURLToPath } from "url";
 import { loggerService } from "./services/logger.service.js";
 
 const __filename = fileURLToPath(import.meta.url);
