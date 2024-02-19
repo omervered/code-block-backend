@@ -265,7 +265,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
   border-radius: 10px;
   box-shadow: 2px 4px 8px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -300,4 +300,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   margin-bottom: 20px;
   text-align: center;
   font-family: "Inter", sans-serif;
-`;function S4(e){const{id:t}=b2(),[n,i]=U.useState(""),u=(w,v)=>{i(w)};U.useEffect(()=>{l(t),i(g)},[t]);async function l(w){try{const v=await f4.getById(w);i(v.codeStarter)}catch(v){console.log(v)}}const a=sw[t],f=a.displayName(),d=a.learnMoreUrl(),g=a.instructions();return xe.jsxs(m4,{children:[xe.jsx(y4,{}),xe.jsxs(_4,{children:[" ",f," "]}),xe.jsxs(w4,{children:[" ",xe.jsx(Dv,{href:d,target:"_blank",children:"Learn More"}),xe.jsx(Dv,{as:uw,to:"/",children:"Back"})]}),xe.jsx(v4,{children:xe.jsx(KN,{language:"javascript",theme:"vs-dark",value:g,options:{minimap:{enabled:!1},automaticLayout:!0},onChange:u})})]})}function E4(){return xe.jsxs(mA,{children:[xe.jsx(U3,{}),xe.jsxs(aA,{children:[xe.jsx(Ud,{element:xe.jsx($3,{}),path:"/"}),xe.jsx(Ud,{element:xe.jsx(S4,{}),path:"/code-block/:id"})]})]})}Kf.createRoot(document.getElementById("app-container")).render(xe.jsx(E4,{}));
+`;function S4(e){const{id:t}=b2(),[n,i]=U.useState(""),u=(v,C)=>{i(v)};U.useEffect(()=>{l(t),i(g)},[t]);async function l(v){try{const C=await f4.getById(v);i(C.codeStarter)}catch(C){console.log(C)}}const a=sw[t],f=a.displayName(),d=a.learnMoreUrl(),g=a.instructions(),w=a.BackgroundColor();return xe.jsxs(m4,{children:[xe.jsx(y4,{}),xe.jsxs(_4,{children:[" ",f," "]}),xe.jsxs(w4,{children:[" ",xe.jsx(Dv,{href:d,target:"_blank",children:"Learn More"}),xe.jsx(Dv,{as:uw,to:"/",children:"Back"})]}),xe.jsx(v4,{style:{backgroundColor:w},children:xe.jsx(KN,{language:"javascript",theme:"vs-dark",value:g,options:{minimap:{enabled:!1},automaticLayout:!0},onChange:u})})]})}function E4(){return xe.jsxs(mA,{children:[xe.jsx(U3,{}),xe.jsxs(aA,{children:[xe.jsx(Ud,{element:xe.jsx($3,{}),path:"/"}),xe.jsx(Ud,{element:xe.jsx(S4,{}),path:"/code-block/:id"})]})]})}Kf.createRoot(document.getElementById("app-container")).render(xe.jsx(E4,{}));
